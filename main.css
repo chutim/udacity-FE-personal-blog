@@ -1,1 +1,29 @@
 @import "css/home.css";
+
+nav {
+  background-color: rgb(241, 92, 92);
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: rgb(109, 109, 248);
+}
+
+.home-card {
+  background-color: rgb(255, 197, 36);
+  border-radius: 0.5em;
+}
+
+#nav-options {
+  width: 25vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#home-card-container {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-gap: 2vw;
+}
