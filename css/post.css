@@ -1,0 +1,18 @@
+.post-about-container {
+  display: flex;
+  margin: 1em;
+  padding: 1em;
+  width: 60vw;
+  border: 1px solid gray;
+}
+
+.post-about-img {
+  height: 8em;
+  width: auto;
+}
+
+.post-about-info {
+  margin-left: 2em;
+  display: flex;
+  flex-direction: column;
+}
