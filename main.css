@@ -1,5 +1,9 @@
 @import "css/home.css";
 
+body {
+  margin: 0;
+}
+
 nav {
   background-color: rgb(241, 92, 92);
   display: flex;
@@ -11,8 +15,20 @@ footer {
 }
 
 .home-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   background-color: rgb(255, 197, 36);
-  border-radius: 0.5em;
+  border-radius: 1em;
+  padding: 3em;
+  margin: 1em;
+}
+
+#home-container {
+  display: grid;
+  grid-template-rows: 5em 1fr 3em;
+  grid-gap: 0;
 }
 
 #nav-options {
@@ -23,7 +39,7 @@ footer {
 }
 
 #home-card-container {
+  padding: 1em;
   display: grid;
-  grid-template-columns: 50vw 50vw;
-  grid-gap: 2vw;
+  grid-template-columns: 45vw 45vw;
 }
