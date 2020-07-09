@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
-    <div class="post-container">
+    <div class="main-container">
       <nav>
         <h1>
           <a href="../index.html" class="post-title-home">My Personal Blog</a>
@@ -18,10 +18,10 @@
         </div>
       </nav>
 
-      <article>
-        <h1>Blog Post 1</h1>
-        <div>Written July 4, 2020 by <a href="">Tim</a></div>
-        <button>Share</button>
+      <article id="post-body">
+        <h1 id="post-title">Blog Post 1</h1>
+        <div id="post-by">Written July 4, 2020 by <a href="" class="link">Tim</a></div>
+        <button id="post-share">Share</button>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod
           consectetur odio, a facilisis sapien semper scelerisque. Mauris
@@ -131,8 +131,9 @@
             </p>
           </div>
         </section>
-        <a href="">Next Post</a>
+
         <a href="../index.html" class="post-home-btn">Home</a>
+        <a href="">Next Post</a>
       </article>
 
       <footer>
