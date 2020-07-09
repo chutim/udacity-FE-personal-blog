@@ -2,28 +2,63 @@
 
 body {
   margin: 0;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
 }
 
 nav {
-  background-color: rgb(241, 92, 92);
+  background-color: #ffd240;
   display: flex;
   justify-content: space-between;
   padding: 0.5em;
 }
 
+h1 {
+  font-size: 2.3em;
+  letter-spacing: 0.1em;
+  margin: auto;
+  margin-left: 0.5em;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
 footer {
-  background-color: rgb(109, 109, 248);
+  background-color: #ffe48b;
+  padding-left: 1em;
 }
 
 .home-card {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  background-color: rgb(255, 197, 36);
+  box-shadow: 0 0 0.8em #f0c74e;
   border-radius: 1em;
   padding: 3em;
-  margin: 1em;
+  margin: 1.5em;
+}
+
+.home-card-title {
+  color: #dfa702;
+}
+
+.home-card-link {
+  text-decoration: none;
+  text-align: right;
+  color: #e0a901;
+  transition: 0.2s;
+}
+
+.home-card-link:hover {
+  color: #6100fd;
 }
 
 #home-container {
@@ -33,14 +68,59 @@ footer {
 }
 
 #nav-options {
-  width: 25vw;
+  font-size: 1.1em;
+  width: 23em;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-right: 0.8em;
+}
+
+#nav-options a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  transition: 0.2s;
+}
+
+#nav-options a:hover {
+  color: #fff;
+}
+
+#nav-options input {
+  font-size: 0.9em;
+  border-radius: 0.3em;
+  padding: 0.2em;
+  border: 2px solid #e7b51e;
 }
 
 #home-card-container {
-  padding: 1em;
   display: grid;
-  grid-template-columns: 45vw 45vw;
+  grid-template-columns: 50vw 50vw;
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 1em;
+  }
+
+  #home-card-container {
+    display: grid;
+    grid-template-columns: 100vw;
+  }
+
+  #home-container {
+    grid-template-rows: 8em 1fr 3em;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5em;
+  }
+
+  #nav-options {
+    padding-left: 1em;
+    margin-bottom: 0.5em;
+  }
 }

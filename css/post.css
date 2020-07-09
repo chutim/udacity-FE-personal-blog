@@ -1,3 +1,12 @@
+blockquote {
+  color: rgb(122, 122, 122);
+}
+
+.post-container {
+  display: grid;
+  grid-template-rows: 5em 1fr 3em;
+}
+
 .post-about-container {
   display: flex;
   margin: 1em;
@@ -15,4 +24,17 @@
   margin-left: 2em;
   display: flex;
   flex-direction: column;
+}
+
+.post-title-home {
+  color: black;
+  text-decoration: none;
+}
+
+.post-home-btn {
+  text-decoration: none;
+  background-color: red;
+  color: black;
+  padding: 0.5em;
+  border-radius: 0.3em;
 }
