@@ -43,14 +43,19 @@ footer {
 .home-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   box-shadow: 0 0 0.8em #f0c74e;
   border-radius: 1em;
   padding: 3em;
   margin: 1.5em;
 }
 
+.home-card-date {
+  color: #858585;
+}
+
 .home-card-title {
+  margin: 0;
   color: #dfa702;
 }
 
